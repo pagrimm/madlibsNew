@@ -19,7 +19,7 @@ $(document).ready(function() {
     let inputs = [];
     $("input").each(function(){
       inputs.push($(this).val());
-    })
+    });
     let position = 1;
     inputs.forEach(function(element) {
       $("span.input" + position).text(element);
@@ -27,8 +27,6 @@ $(document).ready(function() {
     });
     
     $("#story").show();
-
-    }
 
   });
 });
